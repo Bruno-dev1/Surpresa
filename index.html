@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Para você ❤️</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Tenho uma coisa pa mostrar pa vuxe...</h1>
+
+        <button onclick="mostrarVideo()">
+            Clique aqui ❤️
+        </button>
+
+        <div id="videoContainer">
+            <video id="video" controls>
+                <source src="video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+
+    </div>
+
+    <script>
+        function mostrarVideo() {
+            const videoContainer = document.getElementById("videoContainer");
+            const video = document.getElementById("video");
+
+            videoContainer.style.display = "block";
+
+            video.play();
+        }
+    </script>
+
+</body>
+</html>
